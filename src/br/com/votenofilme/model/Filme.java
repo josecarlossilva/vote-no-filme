@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name="FILME")
@@ -15,15 +13,20 @@ public class Filme implements Serializable {
 
 	@Id
 	@Column(name = "ID", nullable = false)
-	@GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 	
 	@Column(name = "NOME", nullable = false)
     private String nome;
 	
-	@Column(name = "QUANTIDADE_VOTOS", nullable = false)
-    private Long quantidadeDeVotos;
+	@Column(name = "QUANTIDADE_VOTOS")
+    private Long quantidadeDeVotos = 0L;
+	
+	public Filme(){}
     
+	public Filme(Integer id, String nome) {
+		this.id = id;
+		this.nome = nome;
+	}
 	public Integer getId() {
 		return id;
 	}

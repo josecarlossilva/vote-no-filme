@@ -23,7 +23,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
 	@Override
 	public void salva(Usuario usuario) {
-		entityManager.persist(usuario);
+			entityManager.merge(usuario);
 	}
 
 	@Override

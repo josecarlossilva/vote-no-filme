@@ -51,5 +51,14 @@ public class FilmeServiceImplTest {
 		assertEquals("Quarto Lugar", "Cosmopolis", filmes.get(3).getNome());
 		assertEquals("Quinto Lugar", "Batman: O Cavaleiro das Trevas Ressurge", filmes.get(4).getNome());
 	}
+	
+	@Test
+	public void deveriaAdicionarListaDeFilmes() {
+		service.adicionaFilmes();
+		
+		List<Filme> lista = service.listaTodos();
+		
+		assertEquals("lista", 10, lista.size());
+	}
 
 }
