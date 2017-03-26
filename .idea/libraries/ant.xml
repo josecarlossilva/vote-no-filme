@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ant">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/build/ant/jsch-0.1.44.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/build/ant/ant-contrib-1.0b3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="build">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/build/mockito-all-1.8.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/build/org.springframework.test-3.0.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/build/dbunit-2.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/build/junit-4.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
